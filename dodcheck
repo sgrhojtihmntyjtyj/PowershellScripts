@@ -1,0 +1,8 @@
+$Desktop = Read-Host “ Enter your Desktop name”
+
+if ($Desktop -like “UK”){ $Adminaddress = “uksite1.com” $Adminaddress1 = “uksite1.com”}
+if ($Desktop -like “US” {  $Adminaddress = “ussite1.com”}
+if ($Desktop -like “SG” {  $Adminaddress = “sgsite1.com”}
+$DesktopDetail = Get-BrokerDesktop -machinename domain\$Desktop -Adminaddress $Adminaddress  
+$DesktopDetail1 = Get-BrokerDesktop -machinename domain\$Desktop -Adminaddress $Adminaddress1  
+Write-Output $DesktopDetail
