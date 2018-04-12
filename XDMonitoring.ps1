@@ -16,11 +16,11 @@
 # Updated : 22-sep-2015
 # suresh krishnan – added pending power actions
 # Load HTML Table Function
+. D:\XDHealthCheck\HTMLTable.ps1
 
 #updated 14-07-2016
 # suresh krishnan – get-brokerdesktop on 7.6 has a maxrecord limation hence the script took 40 mins run to complete the script now with change of new functions using gropu-brokermachine
 # the script runs less than 2 mins.
-. D:\XDHealthCheck\HTMLTable.ps1
 
 # Load Citrix Snapin
 Add-PSSnapin citrix*
