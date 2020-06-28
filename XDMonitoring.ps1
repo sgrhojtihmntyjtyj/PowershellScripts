@@ -71,7 +71,7 @@ $unregisteredlasthourcount = ($unregisteredlasthour | Measure-Object).count
 $unregisteredlasthourcount
 if ($unregisteredlasthourcount -ge 50 ) {
 
-Send-MailMessage -To $gcstmembers -From "suresh-a.krishnan@db.com" -Subject "$unregisteredlasthourcount machines have become unregistered in the last hour on $Adminserver Please check " -SmtpServer "smtphub.eur.mail.db.com"
+Send-MailMessage -To test@example.com -From yourname@example.com -Subject "$unregisteredlasthourcount machines have become unregistered in the last hour on $Adminserver Please check " -SmtpServer "yoursmtpserver@example.com"
 
 }
 } else {
@@ -87,7 +87,7 @@ $disconnectedDOD =0
 $RDPDOD = 0
 $unregisteredlasthourcount = 0
 
-Send-MailMessage -To $gcstmembers -From "suresh-a.krishnan@db.com" -Subject "$Adminserver Failing to connect database Please check connectivity " -SmtpServer "smtphub.eur.mail.db.com" -Priority High -Body "$brokererror Please check "
+Send-MailMessage -To test@example.com -From yourname@example.com -Subject "$unregisteredlasthourcount machines have become unregistered in the last hour on $Adminserver Please check " -SmtpServer "yoursmtpserver@example.com"
 
 }
 $DodStatus += New-Object psobject -Property @{UnRegisteredVMCount = $unregisteredvm
